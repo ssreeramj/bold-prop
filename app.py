@@ -1,6 +1,6 @@
 import os
 
-import aspose.words as aw
+# import aspose.words as aw
 import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -30,13 +30,6 @@ def get_output_from_ai(prompt):
     output = c.choices[0].message.content
 
     return output
-
-
-def save_prop_pdf():
-    doc = aw.Document("./proposal.md")
-
-    # Save the document as PDF
-    doc.save(f"./proposal.pdf")
 
 
 # Title
