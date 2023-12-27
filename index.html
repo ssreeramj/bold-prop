@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Simple HTML Page</h1>
-    </header>
-
-    <section>
-        <p>This is a basic HTML page. And this is the main branch</p>
-        <p>You can add more content here.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Sreeram Jagannath</p>
-    </footer>
-</body>
-</html>
+    <html>
+    <head>
+    	<title>Your app name</title>
+    	<style type="text/css">
+    		html {
+    			overflow: auto;
+    		}  		
+    		html,
+    		body,
+    		div,
+    		iframe {
+    			margin: 0px;
+    			padding: 0px;
+    			height: 100%;
+    			border: none;
+    		}	
+    		iframe {
+    			display: block;
+    			width: 100%;
+    			border: none;
+    			overflow-y: auto;
+    			overflow-x: hidden;
+    		}
+    	</style>
+    </head>
+    <body>
+    	<iframe src="https://bold-prop.streamlit.app/"
+    			frameborder="0"
+    			marginheight="0"
+    			marginwidth="0"
+    			width="100%"
+    			height="100%"
+    			scrolling="auto">
+    </iframe>
+    </body>
+    </html>
